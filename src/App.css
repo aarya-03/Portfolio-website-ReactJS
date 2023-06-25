@@ -1,0 +1,1107 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
+
+:root {
+  --sidebar-flex: 1.5;
+  --condiv-flex: 6;
+  --fontsize-p: 1.2rem;
+  --fontsize-nav: 1.2rem;
+  --typing-font: 1.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway';
+  background: linear-gradient(#dca4f4, #6387be);
+  background-attachment: fixed;
+  overflow-x: hidden;
+
+}
+
+.App {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+.glass p {
+  font-size: 1.2em;
+}
+
+nav {
+  width: 20%;
+  height: 90%;
+  position: fixed;
+  top: 4%;
+  left: 4%;
+  padding: 0;
+  line-height: 1;
+  text-align: center;
+}
+
+.condiv {
+  width: 60%;
+  position: absolute;
+  top: 4%;
+  left: 28%;
+  line-height: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  min-height: 90%;
+}
+
+/* Home CSS */
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90%;
+}
+
+.welcome {
+  width: 50%;
+  margin: auto;
+}
+
+.profilepic {
+  border-radius: 50%;
+  width: 160px;
+  margin: 30px;
+  background-color: #979797;
+}
+
+.typingeffect {
+  font-size: var(--typing-font);
+  margin-bottom: 30px;
+  color: #ffffffbf;
+}
+
+/* Navbar CSS */
+nav ul {
+  position: absolute;
+  bottom: 7%;
+  left: 5%;
+  width: 90%;
+  font-size: var(--fontsize-nav);
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+nav ul li {
+  margin: 15px;
+  padding: 11px;
+  border-radius: 10px;
+  color: white;
+}
+
+nav ul li:hover {
+  background-color: #ffffff80;
+}
+
+a {
+  text-decoration: none;
+  color: #5f4374;
+}
+
+.subtopic {
+  margin: 10px 10px 10px 15px;
+  font-size: 1.6rem;
+}
+
+p {
+  color: white;
+  margin: 10px;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #5f4374;
+}
+
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.abouthead {
+  margin: 15px 10px;
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin: 37px 0 0 90px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: 24px 0 0 90px;
+}
+
+.p1 {
+  margin-left: 90px;
+  font-size: 1rem;
+}
+
+.resumeBtn {
+  display: inline-block;
+  text-align: center;
+  color: #435a88;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.resumeBtn:hover {
+  background-color: #ffffff80;
+  cursor: pointer;
+}
+
+.sk_head {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+.sk {
+  position: absolute;
+  top: 65%;
+  left: 58%;
+  display: inline-block;
+  width: 90px;
+  height: 15px;
+  font-weight: bolder;
+  color: rgba(245, 108, 109, 1);
+  text-align: center;
+  padding: 10px;
+}
+
+.sk:hover {
+  background-color: #ffffff80;
+}
+
+.s2 {
+  left: 75%;
+}
+
+.s3 {
+  top: 75%;
+  left: 58%;
+}
+
+.s4 {
+  top: 75%;
+  left: 75%;
+}
+
+.s5 {
+  top: 85%;
+  left: 58%;
+}
+
+.s6 {
+  top: 85%;
+  left: 75%;
+}
+
+/* Education CSS */
+.edu {
+  display: flex;
+  margin: 20px 0px
+}
+
+.content {
+  border-left: 2px solid red;
+  padding: 7px 10px;
+  line-height: 1.4;
+}
+
+.content h3 {
+  margin: 10px;
+}
+
+.box {
+  width: 8vw;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+#certificates {
+  margin-left: 20px;
+}
+
+#certificates a i {
+  color: rgb(40, 39, 39);
+}
+
+#certificates span {
+  font-style: italic;
+  font-size: 0.85rem;
+}
+#achievements{
+  margin-left: 20px;
+}
+#achievements li{
+  color: white;
+  margin: 10px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+/* WhyToWork CSS */
+#why-to-work {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+#why-to-work ul li {
+  list-style: none;
+  line-height: 2;
+  color: white;
+}
+
+.fa-check {
+  color: red;
+}
+
+.line2 {
+  margin: 1px 10px;
+  height: 5px;
+}
+
+.inner2 {
+  background: rgba(245, 108, 109, 1);
+  width: 120px;
+  height: 3px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.vr_line {
+  width: 10px;
+  height: 210px;
+  position: absolute;
+  top: 58%;
+  left: 6.25%;
+}
+
+.vr_inner {
+  width: 10px;
+  height: 15px;
+  border-radius: 5px;
+  background: linear-gradient(120deg, rgba(245, 108, 109, 1) 0, rgba(245, 108, 109, 1) 100%);
+}
+
+.inn1 {
+  margin-top: 45px;
+}
+
+.inn2 {
+  margin-top: 80px;
+}
+
+.social {
+  width: 50%;
+  height: 14%;
+  position: absolute;
+  bottom: 4%;
+  right: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnsame {
+  height: 50px;
+  width: 50px;
+  margin: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: all 400ms;
+  position: relative;
+}
+
+.btnsame i {
+  font-size: 28px;
+  transition: all 400ms;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+
+.gmailBtn i {
+  color: rgb(44, 41, 41);
+}
+
+.btn1 i {
+  color: #212224;
+}
+
+.btn2 i {
+  color: #00acee;
+}
+
+.btn3 i {
+  color: #0077b5;
+}
+
+.btn4 i {
+  color: #bc2a8d;
+}
+
+.btn5 i {
+  color: #3b5998;
+}
+
+.btnsame:hover {
+  background-color: #ffffff80;
+}
+
+.active {
+  background-color: #ffffff80;
+  font-weight: bolder;
+}
+
+.port_out {
+  position: absolute;
+  width: 38%;
+  height: 30%;
+}
+
+.port_out p {
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.port_out:hover {
+  background-color: rgb(151, 118, 176);
+}
+
+.port1 {
+  top: 18%;
+  left: 10%;
+}
+
+.port2 {
+  top: 18%;
+  left: 53%;
+}
+
+.port3 {
+  top: 58%;
+  left: 10%;
+}
+
+.port4 {
+  top: 58%;
+  left: 53%;
+}
+
+.po1 {
+  width: 96%;
+  height: 93%;
+  margin: 2% 2%;
+  border-radius: 10px;
+}
+
+.line3 {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+}
+
+.inner3 {
+  margin: 3px 15px;
+  background: rgba(245, 108, 109, 1);
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.con_out {
+  position: absolute;
+  width: 88%;
+  top: 13%;
+  left: 6%;
+}
+
+.con_out:hover {
+  background-color: #ffffff80;
+}
+
+.co1 {
+  width: 99%;
+  height: 99%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.back1,
+.hamburger {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 2%;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.back1 {
+  top: 4%;
+}
+
+.hamburger {
+  top: 12.5%;
+  display: none;
+  z-index: 1;
+}
+
+.back1:hover,
+.hamburger:hover {
+  background-color: #ffffff80;
+}
+
+.i1 {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+}
+
+.i2 {
+  color: #ffffffbf;
+  padding-right: 10px;
+}
+
+.i3 {
+  color: rgba(245, 108, 109, 1);
+}
+
+.back2 {
+  top: 55%;
+  left: 4%;
+  z-index: 1;
+  background-color: #ffffffbf;
+  border-radius: 10px;
+}
+
+.back3 {
+  width: 210px;
+  height: 25px;
+  padding: 12px 0;
+  position: absolute;
+  top: 54%;
+  left: 22%;
+  color: black;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.back3:hover {
+  background-color: rgba(245, 108, 109, .5);
+}
+
+.back4 {
+  left: 56%;
+}
+
+.p10 {
+  margin-left: 20px;
+  text-align: justify;
+}
+
+/* Contact CSS */
+#contact p {
+  font-size: 1.2em;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+#player {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  top: -10px;
+}
+
+.row {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.btnbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 20px 5px 20px;
+  padding-bottom: 10px;
+}
+
+.btnbox .btnsame {
+  margin: 0px;
+}
+
+.caption {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding-top: 3px;
+}
+
+/* Skills CSS */
+.title h4 {
+  text-align: center;
+  margin: 0px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  min-width: 20%;
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .glass {
+  box-shadow: none;
+}
+
+.icon {
+  margin: 10px;
+}
+
+.card .icon i {
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+
+/* Media Queries */
+@media all and (max-width: 1500px) {
+  nav {
+    width: 25%;
+  }
+
+  .condiv {
+    width: 60%;
+    left: 30%;
+  }
+
+  .profilepic {
+    width: 120px;
+  }
+
+  nav h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 1024px) {
+
+  .typingeffect {
+    font-size: 1.2rem;
+  }
+
+  .box {
+    margin-left: 30px;
+  }
+
+  .subtopic {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (max-width: 912px) {
+  .welcome h1 {
+    font-size: 1.5rem;
+  }
+
+  .condiv {
+    width: 55%;
+    left: 32%;
+  }
+
+  .glass p {
+    font-size: 1rem;
+  }
+
+  .social {
+    width: 70%;
+    right: 15%;
+  }
+
+  .box {
+    margin-left: 30px;
+    font-size: 1rem;
+  }
+
+  .card {
+    min-width: 30%;
+  }
+
+  .row {
+    width: 99%;
+  }
+  #achievements li{
+    font-size: 0.9rem;
+  }
+}
+
+@media all and (max-width: 790px) {
+  .btnbox {
+    margin: 5px 10px 5px 10px;
+  }
+
+  .port_out {
+    position: static;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .typingeffect {
+    font-size: 1rem;
+  }
+
+  #why-to-work {
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+@media all and (max-width: 688px) {
+  .back1 {
+    width: 42px;
+    height: 41px;
+    font-size: 17px;
+  }
+
+  nav {
+    width: 30%;
+  }
+
+  .welcome {
+    width: 70%;
+  }
+
+  .condiv {
+    width: 60%;
+    left: 35%;
+  }
+
+  .social {
+    width: 90%;
+    right: 5%;
+  }
+
+  .card .icon i {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .card span {
+    font-size: 0.8rem;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 565px) {
+  nav {
+    width: 30%;
+  }
+
+  .profilepic {
+    width: 80px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  :root {
+    --fontsize-nav: 1.2rem;
+    --sidebar-flex: 0;
+    --typing-font: 1.4rem;
+  }
+
+  /* body {
+    height: 1400px;
+  } */
+
+  .App {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebar {
+    padding: 30px;
+  }
+
+  .back1 {
+    right: 7%;
+    top: 5%;
+  }
+
+  .back2 {
+    top: 27%;
+  }
+
+  .hamburger {
+    display: block;
+    right: 7%;
+    width: 42px;
+    height: 41px;
+    font-size: 17px;
+  }
+
+  .home {
+    min-height: 70%;
+  }
+
+  nav {
+    width: 90%;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    height: 62%;
+  }
+  
+  /* when menu closed */
+  .menu-closed {
+    display: none;
+  }
+  .nav-closed {
+    height: auto;
+  }
+  .condiv-closed {
+    top: 25%;
+  }
+  .condiv-open {
+    top: 67%;
+  }
+
+  /*  */
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  .profilepic {
+    width: 80px;
+    margin: 25px 0px 25px 10px;
+  }
+
+  nav h2 {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  .glass p {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .welcome h1 {
+    text-align: left;
+  }
+
+  .neu2 {
+    top: 5%;
+    left: 19%;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .condiv {
+    left: 5%;
+    width: 84.5%;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+
+
+  /* About section */
+  .p10 {
+    font-size: 0.9rem;
+  }
+
+  .content h3 {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+
+  .box {
+    margin-left: 20px;
+    font-size: 0.8rem;
+    padding: 7px;
+  }
+
+  #certificates p {
+    font-size: 0.9rem;
+  }
+
+  /* Skill section */
+  .title h4 {
+    font-size: 1rem;
+  }
+
+  .card {
+    margin: 7px;
+    min-width: 18%;
+  }
+
+  .card span {
+    font-size: 0.7rem;
+  }
+
+  h3 {
+    margin-top: 25px;
+  }
+
+  #why-to-work {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  #why-to-work ul li {
+    font-size: 0.8rem;
+  }
+
+  .sk_head {
+    left: 0;
+    top: 65%;
+    margin-left: 30px;
+  }
+
+  .sk {
+    top: 74%;
+    left: 10%;
+  }
+
+  .s2 {
+    left: 50%;
+  }
+
+  .s3 {
+    top: 82%;
+  }
+
+  .s4 {
+    top: 82%;
+    left: 50%;
+  }
+
+  .s5 {
+    top: 90%;
+  }
+
+  .s6 {
+    top: 90%;
+    left: 50%;
+  }
+
+  .subtopic {
+    margin: 10px !important;
+  }
+
+  .con_out {
+    width: 88%;
+    height: 20%;
+  }
+
+  .con_in {
+    width: 94%;
+    height: 88%;
+  }
+
+  .back3 {
+    top: 44%;
+    left: 19%;
+  }
+
+  .back4 {
+    top: 54%;
+    left: 19%;
+  }
+
+  .line2 {
+    margin: 1px 120px;
+  }
+
+  .inner2 {
+    margin: 15px;
+  }
+
+  .port_out {
+    width: 80%;
+    height: 26%;
+    margin: 0px auto 30px auto;
+  }
+
+  .port_out p {
+    font-size: 0.8rem;
+    color: black;
+    text-align: center;
+  }
+
+  .port1 {
+    top: 2%;
+  }
+
+  .port2 {
+    left: 10%;
+    top: 42%;
+  }
+
+  .port3 {
+    left: 10%;
+    top: 52%;
+  }
+
+  .port4 {
+    top: 72%;
+    left: 10%;
+  }
+
+  .social {
+    width: 90%;
+    bottom: 5%;
+    right: 5%;
+  }
+
+  .btnsame {
+    margin: 15px 10px;
+  }
+}
+
+@media all and (max-width: 387px) {
+  .card {
+    min-width: 30%;
+  }
+}
+
+@media all and (max-width: 350px) {
+  nav h2 {
+    font-size: 1.2rem;
+  }
+
+  .glass p {
+    font-size: 0.75rem;
+  }
+}
