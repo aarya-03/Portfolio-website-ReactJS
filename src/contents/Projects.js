@@ -19,8 +19,6 @@ class Portfolio extends Component {
                     <p>Gadget zone: An e-commerce website</p></div>
                 <div class="port_out port3 glass"><a href="https://github.com/aarya-03/To-do-App"><img src={project3} className="po1"></img></a>
                     <p>To-do App</p></div>
-                <div class="port_out port4 glass"><a href="https://github.com/aarya-03/Portfolio-website-ReactJS"><img src={project4} className="po1"></img></a>
-                    <p>Portfolio website</p></div>
             </div>
         )
     }
