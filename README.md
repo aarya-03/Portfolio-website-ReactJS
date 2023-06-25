@@ -1,10 +1,12 @@
-# Portfolio/Resume Website using React JS.
+# Portfolio Website
+
+ Glassmorphism styled Portfolio/Resume website build using React JS
 
 ### Download the project
 
 ```
-> git clone https://github.com/aarya-03/Portfolio_website.git
-> cd Portfolio_website
+> git clone https://github.com/aarya-03/Portfolio-website-ReactJS.git
+> cd Portfolio-website-ReactJS
 > npm install
 > npm start
 ```
